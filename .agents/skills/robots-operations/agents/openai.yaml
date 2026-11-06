@@ -1,0 +1,3 @@
+interface:
+  display_name: "Robots Operations"
+  short_description: "Apply the Robots operator profile before task dispatch, decision"

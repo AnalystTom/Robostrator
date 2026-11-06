@@ -1,0 +1,38 @@
+# Review standards for this repository
+
+Rules the reviewer asked to have written down, recorded here so that a decision
+already argued out on one pull request is not re-litigated on the next one. Each
+rule states the conditions it depends on, because a rule with its conditions
+dropped stops being a decision and becomes a blind spot.
+
+<a id="a-captain-facing-surface-is-not-automatically-a-visionmd-violation"></a>
+## A Boss-facing surface is not automatically a `VISION.md` violation
+
+This is the Robostrator's working interpretation rather than settled repository policy; whether `VISION.md` itself should be reconciled remains an open question belonging to the Boss; and the conditions listed below are what this interpretation depends on.
+
+`VISION.md` says "The Boss talks to the Robostrator and to nobody else; every
+worker reports through the Robostrator and never addresses the Boss directly."
+That line protects who is answerable for work. Read alongside the sentence it
+shares a paragraph with, it governs workers reporting outward, not the surfaces
+the Boss reaches inward through, so a front end the Boss chooses to speak
+or type into is not by itself a breach of it.
+
+Do not flag a Boss-facing front end as violating that line while **all** of
+these hold:
+
+- it never claims to be the Robostrator, and says so in its own instructions;
+- it has no tool that can change a project, merge, discard work, or grant
+  authority;
+- work that is not answering from existing records is handed to the Robostrator
+  and announced as a handover, rather than performed or claimed.
+
+Any one of those failing is worth flagging, and flagging loudly: a front end that
+gains a write tool, drops the disclaimer, or reports work as its own is the case
+this line exists to catch.
+
+The known tension is not a defect either, and is already on the record: such a
+front end may hold read access to the Boss's records, so the Boss does
+sometimes get a substantive answer from something that is not the Robostrator.
+Whether `VISION.md` should be reconciled to describe that is the Boss's call
+and is not settled by any single pull request. Raising it as new is what this rule
+is here to stop; `bin/fm-voice-relay.py` is the surface it was decided on.
